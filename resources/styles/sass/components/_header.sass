@@ -1,0 +1,169 @@
+.video-background
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  overflow: hidden
+  background-color: #000000
+
+.video
+  opacity: 0.5
+  object-fit: cover
+  min-height: 692px
+  height: 100vh
+  display: block
+  width: 100%
+  @media (min-width: 768px)
+    min-height: 666px
+
+.header
+  z-index: 2
+  position: absolute
+  top: 0
+  left: 50%
+  width: 100%
+  transform: translate(-50%, 0)
+  padding: 22px 33px 38px 32px
+  @media (min-width: 768px)
+    padding: 16px 0 38px 0
+
+  & .container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__logo
+    margin-top: 76px
+    width: 255px
+    height: 36.823px
+    @media (min-width: 768px)
+      margin-top: 163px
+
+      width: 277px
+      height: 39.134px
+
+  &__title
+    margin-top: 50px
+
+    color: $white-color
+    text-align: center
+    font-size: 45px
+    font-family: Uni Sans
+    font-style: normal
+    font-weight: 250
+    line-height: 118.182%
+    @media (min-width: 768px)
+      font-size: 71px
+      width: 727px
+
+  &__description
+    margin-top: 14px
+
+    color: $white-color
+    text-align: center
+    font-size: 16px
+    font-family: Futura Md BT
+    font-style: normal
+    font-weight: 400
+    line-height: 139.188%
+    @media (min-width: 768px)
+      margin-top: 0
+      max-width: 586px
+
+  &__address
+    color: $white-color
+    font-size: 16px
+    font-family: Futura Md BT
+    font-style: normal
+    font-weight: 400
+    line-height: 139.188%
+    @media (min-width: 768px)
+      margin-top: 105px
+
+  &__tel
+    margin-top: 19px
+
+    color: $white-color
+    font-size: 16px
+    font-family: Futura Md BT
+    font-style: normal
+    font-weight: 400
+    line-height: 139.188%
+    @media (min-width: 768px)
+      margin-top: 11px
+
+  &__dots
+    position: absolute
+    top: 51px
+    right: -71px
+    @media (min-width: 768px)
+      right: auto
+      top: 162px
+      left: 87px
+    @media (min-width: 1000px)
+      left: -30px
+    @media (min-width: 1366px)
+      left: -170px
+
+  &__vertical-strip
+    position: absolute
+    height: 177px
+    width: 1px
+    transform: translateY(-50%)
+    top: 0
+    left: 33px
+
+    background-color: $white-color
+    @media (min-width: 1366px)
+      top: 71px
+      left: 135px
+
+  &__horisontal-strip
+    position: absolute
+    height: 1px
+    width: 327px
+    bottom: -38px
+    left: -230px
+
+    background-color: $white-color
+    @media (min-width: 768px)
+      left: -70px
+    @media (min-width: 1000px)
+      left: -200px
+    @media (min-width: 1366px)
+      left: -125px
+
+  &__strip
+    display: none
+    transform: rotate(90deg)
+
+    @media( min-width: 768px )
+      display: block
+      top: 240px
+      right: -180px
+    @media( min-width: 1000px )
+      right: -95px
+
+    &-second
+      display: none
+      transform: rotate(90deg)
+
+      @media( min-width: 768px )
+        display: block
+        top: 340px
+        right: -202px
+      @media( min-width: 1000px )
+        right: -117px
+
+  &__moving-semicircle
+    width: 131.182px
+    @media (min-width: 768px)
+      position: absolute
+      top: 450px
+      left: 565px
+      width: 221px
+    @media (min-width: 1000px)
+      left: auto
+      right: -69px
+    @media (min-width: 1366px)
+      right: 0

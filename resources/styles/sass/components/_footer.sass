@@ -1,0 +1,141 @@
+.footer
+    position: relative
+    overflow: hidden
+    padding: 54px 32px 16px 34px
+
+    background: $footer-bcg-color
+    font-size: 15px
+    font-family: Futura Md BT
+    line-height: 139.188%
+
+    @media( min-width: 768px )
+        padding: 59px 32px 24px 34px
+
+    & .container
+        @media( min-width: 768px )
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+
+    &__logo
+        width: 254px
+        height: 38px
+        margin-bottom: 12px
+
+    &__company-name
+        margin-bottom: 27px
+
+    &__contact-wrapper
+        @media( min-width: 1000px )
+            display: flex
+            column-gap: 28px
+        @media( min-width: 1366px )
+            column-gap: 123px
+
+    &__address-link
+        display: block
+        width: 140px
+        margin-bottom: 27px
+
+    &__contact-list
+        margin-bottom: 35px
+        @media( min-width: 768px )
+            margin-bottom: 21px
+        @media( min-width: 1000px )
+            margin-bottom: 0
+
+    &__services-heading
+        margin-bottom: 14px
+        @media( min-width: 768px )
+            margin-top: 95px
+            margin-left: 51px
+
+    &__services-list
+        display: flex
+        flex-direction: column
+        row-gap: 27.05px
+        margin-bottom: 42.85px
+        padding-left: 17.44px
+
+        list-style-type: disc
+        color: $accent-color
+        font-size: 16px
+        font-family: Uni Sans
+        line-height: 118.182%
+        @media( min-width: 768px )
+            margin-bottom: 0
+        @media( min-width: 1000px )
+            margin-bottom: 41px
+            margin-left: 51px
+
+    &__service-item::marker
+        color: $white-color
+
+    &__lang-button
+        display: flex
+        margin-bottom: 51px
+
+        @media( min-width: 768px )
+            margin-top: 97px
+            margin-bottom: 0
+
+        &.active
+            color: $white-color
+
+    &__copyright-list
+        display: flex
+        flex-direction: column
+        row-gap: 18px
+        padding-top: 35px
+
+        border-top: 1px solid
+
+        color: $grey-text-parag
+        font-size: 16px
+        font-family: Uni Sans
+        line-height: 118.182%
+
+        @media( min-width: 768px )
+            flex-direction: row
+            column-gap: 30px
+            flex-basis: 100%
+
+    &__imprint
+        margin-bottom: 24px
+
+    &__copyright
+        color: $grey-text-parag
+        font-size: 15px
+        line-height: 139.188%
+
+        @media( min-width: 768px )
+            order: -1
+            margin-right: auto
+
+    &__dots
+        position: absolute
+        top: 128px
+        right: -45px
+        @media( min-width: 768px )
+            top: 200px
+            right: -30px
+        @media( min-width: 1000px )
+            right: -45px
+        @media( min-width: 1200px )
+            right: 0
+
+    &__semicircle
+        pointer-events: none
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translate(-50%, 0)
+        @media( min-width: 768px )
+            top: 32px
+            left: 167px
+            transform: translate(0, 0)
+            scale: 1.1
+        @media( min-width: 1000px )
+            top: -40px
+            left: 50%
+            transform: translate(-100%, 0)

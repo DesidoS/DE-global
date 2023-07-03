@@ -1,0 +1,135 @@
+.services
+    padding: 41px 32px 54px 33px
+    overflow: hidden
+    &__strip
+        display: none
+        @media( min-width: 768px )
+            display: block
+            top: -20px
+            right: -90px
+        @media( min-width: 1000px )
+            right: -50px
+        @media( min-width: 1366px )
+            right: 130px
+
+        &-second
+            display: none
+            @media( min-width: 768px )
+                display: block
+                top: 0
+                right: -22px
+            @media( min-width: 1000px )
+                right: 40px
+            @media( min-width: 1366px )
+                right: 225px
+
+    &__wrapper
+        display: flex
+        align-items: center
+        margin-bottom: 29px
+        @media (min-width: 1000px)
+            margin-bottom: 53px
+
+    &__vertical-strip
+        width: 6px
+        height: 44px
+        background: $accent-color
+        margin-right: 10px
+        @media (min-width: 768px)
+            height: 70px
+    &__title
+        color: $black-color
+        font-size: 45px
+        font-family: Uni Sans
+        line-height: 118.182%
+        @media (min-width: 768px)
+            font-size: 75px
+
+    &__logo
+        position: absolute
+        left: 214px
+
+        @media (min-width: 768px)
+            left: 344px
+
+    &__content-wrapper
+        @media (min-width: 768px)
+            display: flex
+            column-gap: 32px
+            & > div
+                flex-basis: 50%
+    &__image
+        width: 100%
+
+    &__svg
+        margin-top: 29px
+        margin-bottom: 19px
+        @media (min-width: 768px)
+            margin-top: 0
+        @media (min-width: 1000px)
+            width: 70px
+            height: 74px
+        @media (min-width: 1366px)
+            margin-top: 68px
+
+    &__subtitle
+        margin-bottom: 19px
+
+        color: $black-color
+        font-size: 20px
+        font-family: Uni Sans
+        font-style: normal
+        font-weight: 250
+        line-height: 118.182%
+
+        @media (min-width: 768px)
+            margin-bottom: 11px
+            font-size: 25px
+
+        @media (min-width: 1000px)
+            width: 400px
+            font-size: 40px
+        @media (min-width: 1366px)
+            width: auto
+            margin-bottom: 17px
+
+    &__sub-description
+        color: $grey-text-parag
+        font-size: 16px
+        font-family: Futura Lt BT
+        font-style: normal
+        font-weight: 400
+        line-height: 139.188%
+        @media (min-width: 768px)
+            font-size: 19px
+
+    &__semicircle
+        display: none
+        @media (min-width: 768px)
+            display: block
+            position: absolute
+            transform: translateX(50%)
+            right: -130px
+            top: 90px
+        @media (min-width: 900px)
+            right: -70px
+        @media (min-width: 1000px)
+            right: 0
+        @media (min-width: 1920px)
+            transform: translateX(0)
+        @media (min-width: 2560px)
+            right: 265px
+
+    &__semicircle-second
+        position: absolute
+        width: 64px
+        transform: rotate(90deg)
+        bottom: -8px
+        right: 28px
+        @media (min-width: 768px)
+            width: 154px
+            left: -20px
+            right: auto
+        @media (min-width: 1000px)
+            width: 172px
+            bottom: 0

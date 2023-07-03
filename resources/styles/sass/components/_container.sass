@@ -1,0 +1,40 @@
+body
+  background-color: $white-color
+  font-family: Uni Sans, sans-serif
+  color: $white-color
+
+.sectinon-svg
+  width: 40px
+  height: 45px
+  @media( min-width: 1000px )
+    width: 63px
+    height: 71px
+
+.lang-button
+  cursor: pointer
+  display: flex
+  background: transparent
+  border: none
+  color: $grey-text-parag
+  font-size: 19px
+  font-weight: 400
+  line-height: 139.188%
+
+  &__strip
+    color: $grey-text-parag
+    font-size: 19px
+    line-height: 139.188%
+
+  &__label
+    transition: all 0.5s ease-in-out
+    &.active
+      color: $white-color
+
+.strip
+  position: absolute
+  width: 276px
+  height: 1px
+  background: $accent-color
+
+.container
+  overflow: hidden

@@ -1,0 +1,148 @@
+.maintenance
+  padding: 72px 33px 54px 33px
+  background-color: $accent-color
+  overflow: hidden
+  &__cover
+    z-index: 1
+    position: absolute
+    top: 0
+    width: 960px
+    right: -666px
+    @media( min-width: 768px )
+      width: 652px
+      right: -200px
+    @media( min-width: 1000px )
+      right: -260px
+    @media( min-width: 1366px )
+      right: -64px
+    @media( min-width: 1920px )
+      right: 0
+
+  & .container
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+    @media (min-width: 768px)
+      flex-direction: row
+      column-gap: 31px
+
+  &__svg
+    margin-top: 33px
+    margin-bottom: 21px
+    @media (min-width: 768px)
+      margin-top: 0
+
+    @media (min-width: 1000px)
+      width: 77px
+      height: 68px
+
+  &__subtitle
+    margin-bottom: 17px
+
+    color: $black-color
+    font-size: 20px
+    font-weight: 250
+    line-height: 118.182%
+    @media (min-width: 768px)
+      font-size: 25px
+    @media (min-width: 1000px)
+      font-size: 40px
+
+  &__description
+    color: $grey-text-parag
+    font-size: 16px
+    font-family: Futura Lt BT
+    font-weight: 400
+    line-height: 139.188%
+    @media (min-width: 768px)
+      font-size: 19px
+      min-width: 350px
+      max-width: 445px
+
+    @media( min-width: 1366px )
+      max-width: 540px
+
+  &__dots
+    position: absolute
+    top: 45px
+    left: -37px
+    @media (min-width: 768px)
+      display: none
+    @media( min-width: 1366px )
+      display: block
+      top: 52px
+      left: 38px
+
+  &__vertical-strip
+    display: none
+    @media( min-width: 1366px )
+      position: absolute
+      display: block
+      height: 177px
+      width: 1px
+      background-color: $white-color
+      top: 123px
+      left: 81px
+
+  &__bgt
+    display: none
+    position: absolute
+    @media (min-width: 768px)
+      bottom: -27px
+      left: 6px
+      display: block
+      color: #C5E856
+      font-size: 115.2px
+      font-family: Uni Sans
+      font-style: normal
+      font-weight: 250
+      line-height: 118.182%
+
+    @media( min-width: 1366px )
+      font-size: 144px
+      bottom: -31px
+
+  &__list
+    z-index: 2
+    position: relative
+    @media( min-width: 1000px ) and ( max-width:1199px)
+      max-width: 443px
+      margin-left: auto
+    @media( min-width: 1200px )
+      max-width: 650px
+
+    @media( min-width: 1366px )
+      max-width: 540px
+
+  &__item
+    opacity: 0
+    animation: slide 9s infinite
+
+  &__item:nth-child(1)
+    animation-delay: 0s
+
+  &__item:nth-child(2)
+    transform: translateY(-100%)
+    position: absolute
+    animation-delay: 3s
+
+  &__item:nth-child(3)
+    transform: translateY(-100%)
+    position: absolute
+    animation-delay: 6s
+
+  &__image
+    display: block
+    width: 100%
+
+  @keyframes slide
+    0%
+      opacity: 0
+    10%
+      opacity: 1
+    35%
+      opacity: 1
+    40%
+      opacity: 0
+    100%
+      opacity: 0

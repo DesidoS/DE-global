@@ -1,0 +1,63 @@
+.upcoming
+    padding: 50px 32px 35px 33px
+    background-color: $accent-color
+    @media  (min-width: 768px)
+        padding: 50px 32px 47px 33px
+    @media  (min-width: 1000px)
+        padding: 55px 32px 61px 33px
+    @media  (min-width: 1366px)
+        padding: 55px 32px 33px 33px
+
+    & .container
+        @media  (min-width: 768px)
+            display: flex
+
+    &__subtitle
+        padding-left: 9px
+        border-left: 6px solid $white-color
+        margin-bottom: 18px
+
+        color: $black-color
+        font-size: 20px
+        font-family: Uni Sans
+        font-style: normal
+        font-weight: 250
+        line-height: 118.182%
+
+        @media  (min-width: 768px)
+            padding-left: 16px
+            margin-bottom: auto
+            margin-right: auto
+
+        @media( min-width: 1000px )
+            font-size: 39.627px
+
+    &__description
+        color: $grey-text-parag
+        font-size: 16px
+        font-family: Futura Lt BT
+        font-style: normal
+        font-weight: 400
+        line-height: 139.188%
+        @media  (min-width: 768px)
+            max-width: 445px
+        @media( min-width: 1000px )
+            font-size: 19px
+            max-width: 540px
+        @media( min-width: 1366px )
+            max-width: 730px
+
+    &__svg
+        position: absolute
+        bottom: -10px
+        right: 52px
+        @media  (min-width: 768px)
+            bottom: 0px
+            width: 79px
+            height: 50px
+        @media  (min-width: 1366px)
+            right: 160px
+        @media  (min-width: 1920px)
+            right: 450px
+        @media  (min-width: 2560px)
+            right: 770px

@@ -4343,6 +4343,7 @@ body {
 .header {
   z-index: 2;
   position: absolute;
+  overflow: hidden;
   top: 0;
   left: 50%;
   width: 100%;
@@ -5329,6 +5330,7 @@ body {
   font-size: 15px;
   font-family: Futura Md BT;
   line-height: 139.188%;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .footer {
@@ -5345,7 +5347,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    overflow: initial;
   }
 }
 .footer__logo {

@@ -4270,6 +4270,7 @@ body {
   background-color: #ffffff;
   font-family: Uni Sans, sans-serif;
   color: #ffffff;
+  overflow: hidden;
 }
 
 .sectinon-svg {
@@ -4313,10 +4314,6 @@ body {
   width: 276px;
   height: 1px;
   background: #BDE14A;
-}
-
-.container {
-  overflow: hidden;
 }
 
 .video-background {
@@ -4561,7 +4558,6 @@ body {
 
 .services {
   padding: 41px 32px 54px 33px;
-  overflow: hidden;
 }
 .services__strip {
   display: none;
@@ -4784,7 +4780,6 @@ body {
 .maintenance {
   padding: 72px 33px 54px 33px;
   background-color: #BDE14A;
-  overflow: hidden;
 }
 .maintenance__cover {
   z-index: 1;
@@ -5026,7 +5021,6 @@ body {
 
 .quality-control {
   padding: 54px 33px;
-  overflow: hidden;
 }
 @media (min-width: 768px) {
   .quality-control {
@@ -5326,7 +5320,6 @@ body {
 
 .footer {
   position: relative;
-  overflow: hidden;
   padding: 54px 32px 16px 34px;
   background: #0C0C0C;
   font-size: 15px;
@@ -5348,6 +5341,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    overflow: initial;
   }
 }
 .footer__logo {

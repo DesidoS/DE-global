@@ -4270,7 +4270,7 @@ body {
   background-color: #ffffff;
   font-family: Uni Sans, sans-serif;
   color: #ffffff;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .sectinon-svg {

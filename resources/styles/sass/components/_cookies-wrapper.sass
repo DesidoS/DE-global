@@ -1,0 +1,84 @@
+.cookies-wrapper
+    transition: transform 0.4s ease
+
+    display: none
+
+    z-index: 999
+    position: fixed
+    bottom: 25px
+
+    flex-direction: column
+    align-items: flex-end
+
+    @media( min-width: 768px )
+        max-width: 594px
+        right: 25px
+
+    @media( max-width: 767px )
+        margin: 0 25px
+
+    &.active
+        display: flex
+
+    &__close
+        cursor: pointer
+        margin-bottom: 17px
+
+    &__container
+        padding: 27px 28px 27px 34px
+
+        border-radius: 25px
+        border: $accent-color
+        background: #FFF
+        box-shadow: 0px 20px 25px -6px rgba(132, 156, 54, 0.25)
+
+    &__text
+        margin-bottom: 38px
+
+        color: $grey-text-parag
+        font-family: Futura Lt BT
+        font-size: 15px
+        font-style: normal
+        font-weight: 400
+        line-height: 139.188%
+        @media( max-width: 767px )
+            max-height: 217px
+            overflow: auto
+
+    &__container > div
+        display: flex
+        flex-direction: column
+
+        @media( min-width: 768px )
+            flex-direction: row
+            justify-content: space-between
+
+    &__button
+        transition: scale 0.25s ease
+        cursor: pointer
+        padding: 12px 12px
+        background: transparent
+        border: none
+        color: #9CBD32
+        text-decoration: underline dotted #9CBD32
+
+        text-shadow: 0px 10px 12px -5px rgba(37, 59, 31, 0.08)
+        font-family: Futura Md BT
+        font-size: 15px
+        font-style: normal
+        font-weight: 700
+        line-height: 139.188%
+        letter-spacing: 0.75px
+
+        &:hover,
+        &:focus
+            scale: 1.1
+            filter: drop-shadow(0px 10px 12px rgba(51, 109, 35, 0.25))
+
+    &__accept
+        padding: 12px 40px
+        text-decoration: none
+        color: $white-color
+        border-radius: 50px
+        background: $accent-color
+        filter: drop-shadow(0px 10px 12px rgba(51, 109, 35, 0.25))

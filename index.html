@@ -104,11 +104,42 @@
                     </div>
                     <div class="services__content-wrapper">
                         <div>
-                            <img
-                                class="services__image"
-                                src="./public/images/rectangle-599.jpg"
-                                alt=""
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./public/images/services__image_320.jpg
+                                    "
+                                    media="(max-width: 320px)"
+                                    type="image/jpeg"
+                                />
+                                <source
+                                    srcset="
+                                        ./public/images/services__image_768.jpg
+                                    "
+                                    media="(max-width: 768px)"
+                                    type="image/jpeg"
+                                />
+                                <source
+                                    srcset="
+                                        ./public/images/services__image_1000.jpg
+                                    "
+                                    media="(max-width: 1000px)"
+                                    type="image/jpeg"
+                                />
+                                <source
+                                    srcset="
+                                        ./public/images/services__image_1366.jpg
+                                    "
+                                    media="(max-width: 1366px)"
+                                    type="image/jpeg"
+                                />
+                                <img
+                                    class="services__image"
+                                    src="./public/images/services__image_1366.jpg"
+                                    alt="services"
+                                />
+                            </picture>
+
                             <img
                                 class="services__semicircle-second"
                                 src="./public/svg/semicircle.svg"
@@ -167,25 +198,52 @@
                     </div>
                     <ul class="maintenance__list">
                         <li class="maintenance__item">
-                            <img
-                                class="maintenance__image"
-                                src="./public/images/maintenance-1.jpg"
-                                alt=""
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./public/images/maintenance_1_image.jpg
+                                    "
+                                    media="(max-width: 1366px)"
+                                    type="image/jpeg"
+                                />
+                                <img
+                                    class="maintenance__image"
+                                    src="./public/images/maintenance_1_image_x2.jpg"
+                                    alt="maintenance"
+                                />
+                            </picture>
                         </li>
                         <li class="maintenance__item">
-                            <img
-                                class="maintenance__image"
-                                src="./public/images/maintenance-2.jpg"
-                                alt=""
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./public/images/maintenance_2_image.jpg
+                                    "
+                                    media="(max-width: 1366px)"
+                                    type="image/jpeg"
+                                />
+                                <img
+                                    class="maintenance__image"
+                                    src="./public/images/maintenance_2_image_x2.jpg"
+                                    alt="maintenance"
+                                />
+                            </picture>
                         </li>
                         <li class="maintenance__item">
-                            <img
-                                class="maintenance__image"
-                                src="./public/images/maintenance-3.jpg"
-                                alt=""
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./public/images/maintenance_3_image.jpg
+                                    "
+                                    media="(max-width: 1366px)"
+                                    type="image/jpeg"
+                                />
+                                <img
+                                    class="maintenance__image"
+                                    src="./public/images/maintenance_3_image_x2.jpg"
+                                    alt="maintenance"
+                                />
+                            </picture>
                         </li>
                     </ul>
                 </div>
@@ -207,7 +265,7 @@
                 <div class="container">
                     <video
                         class="quality-control__video"
-                        src="./public/images/service_03.mp4"
+                        src="./public/images/service_video.mp4"
                         type="video/mp4"
                         autoplay
                         playsinline

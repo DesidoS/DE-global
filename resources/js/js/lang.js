@@ -4,7 +4,7 @@ buttonLang.forEach((button) =>
     button.addEventListener("click", () => {
         window.location.href = "./en.html";
         if (window.location.href.includes("en")) {
-            window.location.href = "/";
+            window.location.href = "/DE-global/";
         }
     })
 );

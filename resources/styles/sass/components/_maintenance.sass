@@ -2,6 +2,10 @@
   padding: 72px 33px 54px 33px
   background-color: $accent-color
   overflow: hidden
+  @media( min-width: 768px )
+    padding: 60px 33px 64px 33px
+  @media( min-width: 1366px )
+    padding: 65px 33px 65px 33px
   &__cover
     z-index: 1
     position: absolute
@@ -38,7 +42,7 @@
 
   &__subtitle
     margin-bottom: 17px
-
+    -webkit-text-stroke: 2px #000000
     color: $black-color
     font-size: 20px
     font-weight: 250

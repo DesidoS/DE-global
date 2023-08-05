@@ -28,7 +28,7 @@
             }
             @font-face {
                 font-family: "Uni Sans";
-                src: url(./resources/fonts/Uni_Sans_Thin.otf);
+                src: url(./resources/fonts/UniSans.ttf);
             }
         </style>
     </head>
@@ -37,6 +37,7 @@
             <video
                 class="video"
                 src="./public/images/main_bg_.mp4"
+                preload="auto"
                 autoplay
                 playsinline
                 muted
@@ -46,22 +47,26 @@
         <header class="header">
             <div class="container">
                 <button class="header__lang-button lang-button">
-                    <span class="lang-button__label">GE</span>
+                    <span class="lang-button__label">DE</span>
                     <span class="lang-button__strip">&nbsp; | &nbsp;</span>
                     <span class="lang-button__label active">EN</span>
                 </button>
+              <div class="header__centered-content">
                 <img
+                    loading="lazy"
                     src="./public/svg/logo-gen.svg"
                     alt="logo"
                     class="header__logo"
                 />
                 <h1 class="header__title">Redefining Precision</h1>
-                <p class="header__description">
+                 <p class="header__description">
                     With our focus on detail and perfection, DE GLOBAL is
                     offering unprecedented precision for diverse industrial
                     applications.
                 </p>
+              </div>
                 <img
+                    loading="lazy"
                     src="./public/images/element_.gif"
                     alt=""
                     class="header__moving-semicircle"
@@ -74,11 +79,11 @@
                 >
                     Grambeker Weg 2 23879 Mölln Germany
                 </a>
-                <a href="tel:+004945429069505" class="header__tel">
+                <a href="tel:+4945429069505" class="header__tel">
                     <span class="header__phone-label">Tel:</span>
-                    0049 4542 90 69 505
+                    +49 4542 90 69 505
                 </a>
-                <img src="./public/svg/dots.svg" alt="" class="header__dots" />
+                <img loading="lazy" src="./public/svg/dots.svg" alt="" class="header__dots" />
                 <div class="header__vertical-strip"></div>
                 <div class="header__horisontal-strip"></div>
                 <div class="strip header__strip"></div>
@@ -94,11 +99,7 @@
                     <div class="services__wrapper">
                         <div class="services__vertical-strip"></div>
                         <h2 class="services__title">Services</h2>
-                        <img
-                            class="services__logo"
-                            src="./public/svg/logo.svg"
-                            alt=""
-                        />
+                        <img loading="lazy" class="services__logo" src="./public/svg/logo.svg" alt="logo" />
                     </div>
                     <div class="services__content-wrapper">
                         <div>
@@ -132,12 +133,14 @@
                                     type="image/jpeg"
                                 />
                                 <img
+                                    loading="lazy"
                                     class="services__image"
                                     src="./public/images/services__image_1366.jpg"
                                     alt="services"
                                 />
                             </picture>
                             <img
+                                loading="lazy"
                                 class="services__semicircle-second"
                                 src="./public/svg/semicircle.svg"
                                 alt=""
@@ -145,6 +148,7 @@
                         </div>
                         <div>
                             <img
+                                loading="lazy"
                                 class="services__svg sectinon-svg"
                                 src="./public/svg/project.svg"
                                 alt=""
@@ -163,6 +167,7 @@
                     </div>
                 </div>
                 <img
+                    loading="lazy"
                     class="services__semicircle"
                     src="./public/svg/semicircle.svg"
                     alt=""
@@ -173,6 +178,7 @@
                 <div class="container">
                     <div>
                         <img
+                            loading="lazy"
                             class="maintenance__svg sectinon-svg"
                             src="./public/svg/maintenance.svg"
                             alt=""
@@ -202,6 +208,7 @@
                                     type="image/jpeg"
                                 />
                                 <img
+                                    loading="lazy"
                                     class="maintenance__image"
                                     src="./public/images/maintenance_1_image_x2.jpg"
                                     alt="maintenance"
@@ -218,6 +225,7 @@
                                     type="image/jpeg"
                                 />
                                 <img
+                                    loading="lazy"
                                     class="maintenance__image"
                                     src="./public/images/maintenance_2_image_x2.jpg"
                                     alt="maintenance"
@@ -234,6 +242,7 @@
                                     type="image/jpeg"
                                 />
                                 <img
+                                    loading="lazy"
                                     class="maintenance__image"
                                     src="./public/images/maintenance_3_image_x2.jpg"
                                     alt="maintenance"
@@ -243,15 +252,17 @@
                     </ul>
                 </div>
                 <img
+                    loading="lazy"
                     class="maintenance__dots"
                     src="./public/svg/dots.svg"
                     alt=""
                 />
                 <div class="maintenance__vertical-strip"></div>
                 <img
+                    loading="lazy"
                     class="maintenance__cover"
                     src="./public/images/maintenance-cover.png"
-                    alt=""
+                    alt="cover"
                 />
                 <span class="maintenance__bgt">Services</span>
             </section>
@@ -260,14 +271,16 @@
                 <div class="container">
                     <video
                         class="quality-control__video"
-                        src="./public/images/service_03.mp4"
+                        src="./public/images/service_video.mp4"
                         autoplay
                         playsinline
                         muted
                         loop
+                        loading="lazy"
                     ></video>
                     <div class="quality-control__wrapper">
                         <img
+                            loading="lazy"
                             class="quality-control__svg sectinon-svg"
                             src="./public/svg/quality.svg"
                             alt=""
@@ -284,13 +297,15 @@
                         <div class="strip quality-control__strip"></div>
                         <div class="strip quality-control__strip-second"></div>
                         <img
+                            loading="lazy"
                             class="quality-control__cover"
                             src="./public/svg/quality-cover.svg"
-                            alt=""
+                            alt="cover"
                         />
                     </div>
                 </div>
                 <img
+                    loading="lazy"
                     class="quality-control__semicircle"
                     src="./public/svg/semicircle.svg"
                     alt=""
@@ -312,7 +327,8 @@
                     </p>
                 </div>
                 <img
-                    class="upcoming__svg sectinon-svg"
+                    loading="lazy"
+                    class="upcoming__svg"
                     src="./public/svg/gear.svg"
                     alt="upcoming"
                 />
@@ -322,6 +338,7 @@
             <div class="container">
                 <div>
                     <img
+                        loading="lazy"
                         src="./public/svg/logo-gen.svg"
                         alt=""
                         class="footer__logo"
@@ -347,20 +364,20 @@
                             </li>
                             <li class="footer__contact-list-item">
                                 <a
-                                    href="tel:004945429069505"
+                                    href="tel:+4945429069505"
                                     class="footer__tel-link"
                                 >
                                     <span class="footer__tel-label">Tel.</span>
-                                    0049 4542 90 69 505
+                                    +49 4542 90 69 505
                                 </a>
                             </li>
                             <li class="footer__contact-list-item">
                                 <a
-                                    href="fax:004945429069506"
+                                    href="fax:+4945429069506"
                                     class="footer__fax-link"
                                 >
                                     <span class="footer__fax-label">Fax.</span>
-                                    0049 4542 90 69 506
+                                    +49 4542 90 69 506
                                 </a>
                             </li>
                         </ul>
@@ -385,7 +402,7 @@
                     </ul>
                 </div>
                 <button class="footer__lang-button lang-button">
-                    <span class="lang-button__label">GE</span>
+                    <span class="lang-button__label">DE</span>
                     <span class="lang-button__strip">&nbsp; | &nbsp;</span>
                     <span class="lang-button__label active">EN</span>
                 </button>
@@ -405,11 +422,12 @@
                     </li>
                     <li class="footer__copyright">©2023 DE-Global.</li>
                 </ul>
-                <img src="./public/svg/dots.svg" alt="" class="footer__dots" />
+                <img src="./public/svg/dots.svg" alt="dots" class="footer__dots" loading="lazy" />
                 <img
                     src="./public/svg/semicircle-transparent.svg"
                     alt=""
                     class="footer__semicircle"
+                    loading="lazy"
                 />
             </div>
         </footer>
@@ -418,6 +436,8 @@
                 src="./public/svg/close.svg"
                 alt="close"
                 class="cookies-wrapper__close"
+                loading="lazy"
+
             />
             <div class="cookies-wrapper__container">
                 <p class="cookies-wrapper__text">
@@ -456,10 +476,10 @@
             </div>
         </div>
         <div class="popup__bg">
-            <img src="./public/svg/close.svg" alt="" class="close-popup" />
+            <img src="./public/svg/close.svg" alt="close" class="close-popup" loading="lazy" />
             <div class="popup">
                 <div class="cookies">
-                    <h3 class="cookies__title active">Cookies Statement</h3>
+                    <h3 class="cookies__title">Cookies Statement</h3>
                     <h3 class="cookies__title">Privacy Policies</h3>
                     <h3 class="cookies__title">imprint</h3>
                     <div class="cookies__underline"></div>

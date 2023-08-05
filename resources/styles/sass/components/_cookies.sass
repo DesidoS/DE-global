@@ -39,8 +39,10 @@
         font-family: Futura Md BT
         line-height: 139.188%
         overflow-y: auto
-        height: calc( 100vh - 100px)
-        padding-bottom: 50px
+        height: calc( 100vh - 270px)
+
+        @media (min-width: 521px)
+            height: calc( 100vh - 170px)
 
     &__popup
         &-title

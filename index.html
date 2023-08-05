@@ -2,6 +2,15 @@
 <html lang="de">
     <head>
         <meta charset="UTF-8" />
+        <meta property="og:title" content="DE-global">
+        <meta property="og:description" content=" DE Global ist Ihr zuverlässiger Partner, wenn es um die
+        Entwicklung sowie Anwendung fortschrittlicher Lasersysteme
+        geht. Mit Liebe und Fokus zum Detail denken wir Präzision
+        neu.">
+        <meta property="og:url" content="https://desidos.github.io/DE-global/">
+        <meta property="og:image" content="https://desidos.github.io/DE-global/public/images/maintenance_3_image_x2.jpg">
+        <meta property="og:type" content="website">
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta
             name="viewport"
@@ -28,15 +37,16 @@
             }
             @font-face {
                 font-family: "Uni Sans";
-                src: url(./resources/fonts/Uni_Sans_Thin.otf);
+                src: url(./resources/fonts/UniSans.ttf);
             }
         </style>
     </head>
     <body>
         <div class="video-background">
             <video
-                class="video"
+                class="video video-de"
                 src="./public/images/main_bg_.mp4"
+                preload="auto"
                 autoplay
                 playsinline
                 muted
@@ -46,26 +56,30 @@
         <header class="header">
             <div class="container">
                 <button class="header__lang-button lang-button">
-                    <span class="lang-button__label active">GE</span>
+                    <span class="lang-button__label active">DE</span>
                     <span class="lang-button__strip">&nbsp; | &nbsp;</span>
                     <span class="lang-button__label">EN</span>
                 </button>
-                <img
-                    src="./public/svg/logo-gen.svg"
-                    alt="logo"
-                    class="header__logo"
-                />
-                <h1 class="header__title">Präzision Neu Gedacht</h1>
-                <p class="header__description">
-                    DE Global ist Ihr zuverlässiger Partner, wenn es um die
-                    Entwicklung sowie Anwendung fortschrittlicher Lasersysteme
-                    geht. Mit Liebe und Fokus zum Detail denken wir Präzision
-                    neu.
-                </p>
+                <div class="header__centered-content">
+                    <img
+                        src="./public/svg/logo-gen.svg"
+                        alt="logo"
+                        class="header__logo"
+                        loading="lazy"
+                    />
+                    <h1 class="header__title">Präzision Neu Gedacht</h1>
+                    <p class="header__description">
+                        DE Global ist Ihr zuverlässiger Partner, wenn es um die
+                        Entwicklung sowie Anwendung fortschrittlicher Lasersysteme
+                        geht. Mit Liebe und Fokus zum Detail denken wir Präzision
+                        neu.
+                    </p>
+                </div>
                 <img
                     src="./public/images/element_.gif"
-                    alt=""
+                    alt="semicircle"
                     class="header__moving-semicircle"
+                    loading="lazy"
                 />
                 <a
                     href="https://goo.gl/maps/msCdRdZsnhNedUo9A"
@@ -75,11 +89,13 @@
                 >
                     Grambeker Weg 2 23879 Mölln Germany
                 </a>
-                <a href="tel:+004945429069505" class="header__tel">
+                <a href="tel:+4945429069505" class="header__tel">
                     <span class="header__phone-label">Tel:</span>
-                    0049 4542 90 69 505
+                    +49 4542 90 69 505
                 </a>
-                <img src="./public/svg/dots.svg" alt="" class="header__dots" />
+                <img src="./public/svg/dots.svg" alt="dots" class="header__dots"
+                    loading="lazy"
+                 />
                 <div class="header__vertical-strip"></div>
                 <div class="header__horisontal-strip"></div>
                 <div class="strip header__strip"></div>
@@ -98,7 +114,9 @@
                         <img
                             class="services__logo"
                             src="./public/svg/logo.svg"
-                            alt=""
+                            alt="logo"
+                    loading="lazy"
+
                         />
                     </div>
                     <div class="services__content-wrapper">
@@ -136,20 +154,26 @@
                                     class="services__image"
                                     src="./public/images/services__image_1366.jpg"
                                     alt="services"
+                    loading="lazy"
+
                                 />
                             </picture>
 
                             <img
                                 class="services__semicircle-second"
                                 src="./public/svg/semicircle.svg"
-                                alt=""
+                                alt="semicircle"
+                    loading="lazy"
+
                             />
                         </div>
                         <div>
                             <img
                                 class="services__svg sectinon-svg"
                                 src="./public/svg/project.svg"
-                                alt=""
+                                alt="services"
+                    loading="lazy"
+
                             />
                             <h3 class="services__subtitle">
                                 Projektberatung &amp; -umsetzung
@@ -167,7 +191,9 @@
                 <img
                     class="services__semicircle"
                     src="./public/svg/semicircle.svg"
-                    alt=""
+                    alt="semicircle"
+                    loading="lazy"
+
                 />
             </section>
 
@@ -177,7 +203,9 @@
                         <img
                             class="maintenance__svg sectinon-svg"
                             src="./public/svg/maintenance.svg"
-                            alt=""
+                            alt="maintenance"
+                            loading="lazy"
+
                         />
                         <h3 class="maintenance__subtitle">
                             Instandhaltung &amp; <br />
@@ -209,6 +237,8 @@
                                     class="maintenance__image"
                                     src="./public/images/maintenance_1_image_x2.jpg"
                                     alt="maintenance"
+                    loading="lazy"
+
                                 />
                             </picture>
                         </li>
@@ -225,6 +255,8 @@
                                     class="maintenance__image"
                                     src="./public/images/maintenance_2_image_x2.jpg"
                                     alt="maintenance"
+                                    loading="lazy"
+
                                 />
                             </picture>
                         </li>
@@ -241,6 +273,7 @@
                                     class="maintenance__image"
                                     src="./public/images/maintenance_3_image_x2.jpg"
                                     alt="maintenance"
+                                    loading="lazy"
                                 />
                             </picture>
                         </li>
@@ -249,13 +282,16 @@
                 <img
                     class="maintenance__dots"
                     src="./public/svg/dots.svg"
-                    alt=""
+                    alt="dots"
+                    loading="lazy"
                 />
                 <div class="maintenance__vertical-strip"></div>
                 <img
                     class="maintenance__cover"
                     src="./public/images/maintenance-cover.png"
-                    alt=""
+                    alt="cover"
+                    loading="lazy"
+
                 />
                 <span class="maintenance__bgt">Services</span>
             </section>
@@ -265,6 +301,7 @@
                     <video
                         class="quality-control__video"
                         src="./public/images/service_video.mp4"
+                        loading="lazy"
                         autoplay
                         playsinline
                         muted
@@ -274,7 +311,9 @@
                         <img
                             class="quality-control__svg sectinon-svg"
                             src="./public/svg/quality.svg"
-                            alt=""
+                            alt="quality"
+                            loading="lazy"
+
                         />
                         <h3 class="quality-control__subtitle">
                             Qualitätskontrolle &amp; -sicherung
@@ -292,14 +331,17 @@
                         <img
                             class="quality-control__cover"
                             src="./public/svg/quality-cover.svg"
-                            alt=""
+                            alt="cover"
+                            loading="lazy"
+
                         />
                     </div>
                 </div>
                 <img
                     class="quality-control__semicircle"
                     src="./public/svg/semicircle.svg"
-                    alt=""
+                    alt="semicircle"
+                    loading="lazy"
                 />
             </section>
             <section class="upcoming">
@@ -317,9 +359,10 @@
                     </p>
                 </div>
                 <img
-                    class="upcoming__svg sectinon-svg"
+                    class="upcoming__svg"
                     src="./public/svg/gear.svg"
                     alt="upcoming"
+                    loading="lazy"
                 />
             </section>
         </main>
@@ -328,8 +371,10 @@
                 <div>
                     <img
                         src="./public/svg/logo-gen.svg"
-                        alt=""
+                        alt="logo"
                         class="footer__logo"
+                        loading="lazy"
+
                     />
                     <p class="footer__company-name">DE Global GmbH</p>
                     <div class="footer__contact-wrapper">
@@ -352,20 +397,20 @@
                             </li>
                             <li class="footer__contact-list-item">
                                 <a
-                                    href="tel:004945429069505"
+                                    href="tel:+4945429069505"
                                     class="footer__tel-link"
                                 >
                                     <span class="footer__tel-label">Tel.</span>
-                                    0049 4542 90 69 505
+                                    +49 4542 90 69 505
                                 </a>
                             </li>
                             <li class="footer__contact-list-item">
                                 <a
-                                    href="fax:004945429069506"
+                                    href="fax:+4945429069506"
                                     class="footer__fax-link"
                                 >
                                     <span class="footer__fax-label">Fax.</span>
-                                    0049 4542 90 69 506
+                                    +49 4542 90 69 506
                                 </a>
                             </li>
                         </ul>
@@ -388,7 +433,7 @@
                     </ul>
                 </div>
                 <button class="footer__lang-button lang-button">
-                    <span class="lang-button__label active">GE</span>
+                    <span class="lang-button__label active">DE</span>
                     <span class="lang-button__strip">&nbsp; | &nbsp;</span>
                     <span class="lang-button__label">EN</span>
                 </button>
@@ -408,11 +453,15 @@
                     </li>
                     <li class="footer__copyright">©2023 DE-Global.</li>
                 </ul>
-                <img src="./public/svg/dots.svg" alt="" class="footer__dots" />
+                <img src="./public/svg/dots.svg" alt="dots" class="footer__dots"
+                    loading="lazy"
+                 />
                 <img
                     src="./public/svg/semicircle-transparent.svg"
-                    alt=""
+                    alt="semicircle"
                     class="footer__semicircle"
+                    loading="lazy"
+
                 />
             </div>
         </footer>
@@ -421,6 +470,8 @@
                 src="./public/svg/close.svg"
                 alt="close"
                 class="cookies-wrapper__close"
+                loading="lazy"
+
             />
             <div class="cookies-wrapper__container">
                 <p class="cookies-wrapper__text">
@@ -459,10 +510,12 @@
             </div>
         </div>
         <div class="popup__bg">
-            <img src="./public/svg/close.svg" alt="" class="close-popup" />
+            <img src="./public/svg/close.svg" alt="close" class="close-popup" 
+                    loading="lazy"
+            />
             <div class="popup">
                 <div class="cookies">
-                    <h3 class="cookies__title active">Cookies Statement</h3>
+                    <h3 class="cookies__title">Cookies Statement</h3>
                     <h3 class="cookies__title">Privacy Policies</h3>
                     <h3 class="cookies__title">imprint</h3>
                     <div class="cookies__underline"></div>

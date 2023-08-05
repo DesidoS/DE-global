@@ -15,6 +15,8 @@
   width: 100%
   @media (min-width: 768px)
     min-height: 666px
+.video.video-de
+  min-height: 790px
 
 .header
   z-index: 2
@@ -24,22 +26,39 @@
   left: 50%
   width: 100%
   transform: translate(-50%, 0)
-  padding: 22px 33px 38px 32px
   @media (min-width: 768px)
-    padding: 16px 0 38px 0
+    // height: 100vh
+  @media (min-height: 790px)
+    height: 100vh
+
 
   & .container
     display: flex
     flex-direction: column
     align-items: center
+    padding: 22px 33px 38px 32px
+    @media (min-width: 768px)
+      // height: 100vh
+    @media (min-width: 768px)
+      padding: 16px 0 38px 0
+    @media (min-height: 790px)
+      height: 100vh
+
+  &__centered-content
+    display: flex
+    flex-direction: column
+    align-items: center
+    @media (min-height: 790px) and (min-width: 768px)
+      position: absolute
+      height: 100vh
+      top: 25%
+
 
   &__logo
     margin-top: 76px
     width: 255px
     height: 36.823px
     @media (min-width: 768px)
-      margin-top: 163px
-
       width: 277px
       height: 39.134px
 
@@ -53,9 +72,11 @@
     font-style: normal
     font-weight: 250
     line-height: 118.182%
+    max-width: 255px
     @media (min-width: 768px)
+      max-width: none
       font-size: 71px
-      width: 727px
+      width: 805px
 
   &__description
     margin-top: 14px
@@ -67,7 +88,9 @@
     font-style: normal
     font-weight: 400
     line-height: 139.188%
+    max-width: 255px
     @media (min-width: 768px)
+      max-width: none
       margin-top: 0
       max-width: 586px
 
@@ -76,10 +99,16 @@
     font-size: 16px
     font-family: Futura Md BT
     font-style: normal
+    text-align: center
     font-weight: 400
     line-height: 139.188%
+    max-width: 255px
     @media (min-width: 768px)
+      max-width: none
       margin-top: 105px
+    @media (min-height: 790px)
+      position:  absolute
+      bottom: 114px
 
   &__tel
     margin-top: 19px
@@ -92,17 +121,20 @@
     line-height: 139.188%
     @media (min-width: 768px)
       margin-top: 11px
+    @media (min-height: 790px)
+      position:  absolute
+      bottom: 72px
 
   &__dots
     position: absolute
-    top: 51px
-    right: -71px
+    top: 71px
+    left: 69%
     @media (min-width: 768px)
       right: auto
-      top: 162px
-      left: 87px
+      top: 146px
+      left: -60px
     @media (min-width: 1000px)
-      left: -30px
+      left: -27px
     @media (min-width: 1366px)
       left: -170px
 
@@ -115,24 +147,35 @@
     left: 33px
 
     background-color: $white-color
+    @media (min-width: 768px)
+      left: 150px
+      top: -16px
+      transform: translateY(0)
+
     @media (min-width: 1366px)
+      transform: translateY(-50%)
       top: 71px
       left: 135px
 
   &__horisontal-strip
-    position: absolute
     height: 1px
     width: 327px
-    bottom: -38px
+    bottom: -28px
     left: -230px
 
     background-color: $white-color
     @media (min-width: 768px)
-      left: -70px
+      position: absolute
+      left: -215px
+      bottom: 64px
+
     @media (min-width: 1000px)
       left: -200px
     @media (min-width: 1366px)
       left: -125px
+    @media (max-width: 767px) and (min-height: 790px)
+      position: absolute
+      bottom: 38px
 
   &__strip
     display: none
@@ -160,7 +203,7 @@
     width: 131.182px
     @media (min-width: 768px)
       position: absolute
-      top: 450px
+      bottom: 8px
       left: 565px
       width: 221px
     @media (min-width: 1000px)
